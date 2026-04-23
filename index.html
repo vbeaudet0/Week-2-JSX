@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Resource link: Ensures text uses the UTF-8 character set -->
     <meta charset="UTF-8">
+    <!-- Resource link: Makes layout scale correctly on mobile/tablet -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title: Label shown in the browser tab -->
     <title>Pricing Plans — HTML version</title>
+    <!-- Font link: Speeds up loading Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font link: Preconnect for actual font file host -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font link: Imports Inter typeface used in the design -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Styles link: Loads all visual styles from styles.css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page label: Quick badge showing this is static HTML -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Cards wrapper: Holds all pricing cards in one row -->
     <div class="cards-container">
+        <!-- Card block: Hobby tier with free plan details -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -20,6 +31,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
+                    <!-- Feature list: Key benefits for this plan -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,8 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary action: Button for free tier download -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card block: Pro tier with paid plan details -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -47,6 +62,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
+                    <!-- Feature list: Additional value in Pro tier -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -67,7 +83,43 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary action: Button for paid tier conversion -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Card block: Enterprise tier for larger teams -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$60</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <!-- Feature list: Team-scale and admin capabilities -->
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team management controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced security options
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom onboarding
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary action: Button for enterprise onboarding -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>

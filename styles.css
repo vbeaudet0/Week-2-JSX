@@ -1,9 +1,13 @@
+/* Section: Global reset
+   Purpose: Remove default spacing and use predictable box sizing. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Section: Page layout
+   Purpose: Center content and apply base typography/background. */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +18,8 @@ body {
     padding: 20px;
 }
 
+/* Section: Pricing cards row
+   Purpose: Keep cards in a horizontal group with consistent spacing. */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,8 @@ body {
     align-items: flex-start;
 }
 
+/* Section: Individual card
+   Purpose: Set card surface, width, and vertical content flow. */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +42,15 @@ body {
     flex-shrink: 0;
 }
 
+/* Section: Card header area
+   Purpose: Group title, price, and intro content at the top. */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Section: Card title
+   Purpose: Define visual hierarchy for plan name. */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +59,8 @@ body {
     margin-bottom: 8px;
 }
 
+/* Section: Price row
+   Purpose: Align amount and period on a shared baseline. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +68,44 @@ body {
     align-items: baseline;
 }
 
+/* Section: Price amount
+   Purpose: Main numeric price style. */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Section: Price period
+   Purpose: Smaller companion style for billing cadence text. */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Section: Card body
+   Purpose: Space before the button area. */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Section: Includes label
+   Purpose: Intro text above each feature list. */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Section: Features list
+   Purpose: Remove default bullets for custom checkmark style. */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Section: Feature item
+   Purpose: Align checkmark icon and text in one line. */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +114,8 @@ body {
     color: #26251e;
 }
 
+/* Section: Checkmark icon
+   Purpose: Set size and spacing for the check symbol. */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +123,8 @@ body {
     font-weight: 400;
 }
 
+/* Section: Shared button style
+   Purpose: Base shape, spacing, and interaction for both buttons. */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,6 +139,8 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Section: Secondary button states
+   Purpose: Hover and active color for neutral button style. */
 .download-button:hover {
     background-color: #D8D6CE;
 }
@@ -117,11 +149,15 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Section: Primary button variant
+   Purpose: Dark high-emphasis style for Pro action. */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Section: Primary button states
+   Purpose: Hover and active color for high-emphasis button. */
 .download-button.primary:hover {
     background-color: #333;
 }
@@ -130,6 +166,8 @@ body {
     background-color: #333;
 }
 
+/* Section: Page label badge
+   Purpose: Fixed helper label centered at top of the page. */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +181,8 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Section: Label emphasis
+   Purpose: Darker text color for strong part of badge. */
 .page-label strong {
     color: #333;
 }
